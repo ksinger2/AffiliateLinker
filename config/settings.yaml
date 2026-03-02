@@ -1,0 +1,79 @@
+# AffiliateLinker Configuration
+
+# Amazon Associates
+amazon:
+  associate_tag: ""  # Your Amazon Associate tag (e.g., "mysite-20")
+  access_key: ""     # PA-API access key
+  secret_key: ""     # PA-API secret key
+  region: "us-east-1"
+  marketplace: "www.amazon.com"
+
+# Pinterest API
+pinterest:
+  app_id: ""
+  app_secret: ""
+  access_token: ""
+  board_prefix: "affiliate-"  # Prefix for auto-created boards
+
+# Anthropic (for AI content generation)
+anthropic:
+  api_key: ""
+
+# Product Research Settings
+product_researcher:
+  niches:
+    - home-kitchen
+    - electronics
+    - beauty-personal-care
+    - sports-fitness
+    - tools-home-improvement
+  price_range:
+    min: 10
+    max: 100
+  min_rating: 4.0
+  min_reviews: 50
+  daily_target: 25
+
+# Account Manager Settings
+account_manager:
+  posts_per_day: 12
+  posting_times:
+    - "08:00"
+    - "08:30"
+    - "12:00"
+    - "12:30"
+    - "20:00"
+    - "20:30"
+    - "21:00"
+    - "21:30"
+    - "22:00"
+    - "22:30"
+    - "23:00"
+    - "23:30"
+  image_size:
+    width: 1000
+    height: 1500
+
+# Strategist Settings
+strategist:
+  research_frequency: weekly
+  competitors_to_track: 10
+  report_day: monday
+
+# Manager Settings
+manager:
+  automation_level: 2  # 0-5 (see manager.md for levels)
+  escalation_email: ""
+  alerts:
+    low_pipeline_threshold: 10
+    post_failure_threshold: 3
+    engagement_drop_percent: 30
+
+# Database
+database:
+  path: "data/affiliatelinker.db"
+
+# Logging
+logging:
+  level: "INFO"
+  file: "data/app.log"
